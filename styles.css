@@ -1,6 +1,25 @@
 body {
     background: #00009C;
     overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left-side {
+    width: 50%;
+    height: 100%
+}
+
+.right-side {
+    font-family: 'Mountains of Christmas', cursive;
+    color: white;
+    font-size: 100px;
+    width: 50%;
+    height: 100vh;
+}
+
+.greetings {
+    line-height: 100vh
 }
 
 .tree {
