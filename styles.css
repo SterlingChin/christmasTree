@@ -115,35 +115,40 @@ body {
 }
 
 .lights :nth-child(1) {
-    background: red;
     position: fixed;
     left: 10%;
     bottom: -25px;
+    animation: alternate-red .8s infinite;
+    -webkit-animation: alternate-red .8s infinite;
 }
 
 .lights :nth-child(2) {
-    background: yellow;
     position: fixed;
     left: 30%;
     bottom: -23px;
+    animation: alternate-yellow .8s infinite;
+    -webkit-animation: alternate-yellow .8s infinite;
 }
 .lights :nth-child(3) {
-    background: red;
     position: fixed;
     left: 48%;
     bottom: -12px;
+    animation: alternate-red .8s infinite;
+    -webkit-animation: alternate-red .8s infinite;
 }
 .lights :nth-child(4) {
-    background: yellow;
     position: fixed;
     left: 65%;
     bottom: 5px;
+    animation: alternate-yellow .8s infinite;
+    -webkit-animation: alternate-yellow .8s infinite;
 }
 .lights :nth-child(5) {
-    background: red;
     position: fixed;
     left: 80%;
     bottom: 25px;
+    animation: alternate-red .8s infinite;
+    -webkit-animation: alternate-red .8s infinite;
 }
 
 .trunk {
@@ -242,5 +247,22 @@ body {
         -moz-transform: translateY(5px);
         -ms-transform: translateY(5px);
         -o-transform: translateY(5px);
+    }
+}
+
+@keyframes alternate-red {
+    0%, 100% {
+        background-color: red;
+    }
+    50% {
+        background-color: yellow;
+    }
+}
+@keyframes alternate-yellow {
+    0%, 100% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: red;
     }
 }
